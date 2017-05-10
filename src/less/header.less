@@ -11,56 +11,114 @@ a:visited{
     text-decoration: none;
     color: inherit;
 }
+ul{
+    margin:0;
+    padding: 0;
+}
 .header{
     width: 100%;
     height: 120px;
     background-image: url(../../src/img/header_bg.jpg);
-    .logo{
-        display: block;
+    .nav img{
         float: left;
     }
     .menu{
-        padding: 0;
-        margin: 0;
+        float: right;
+        color: #fff;
         list-style: none;
-        padding:45px 60px;
-        float: left;
-        >li{
+        padding-top: 50px;
+        position: relative;
+        .list{
+            height: 70px;
             float: left;
-            color: #ccbedf;
-            font-size: 16px;
-            line-height: 23px;
-            padding-left: 30px;
-            position: relative;
-            .arrow{
-                float: right;
-                width: 25px;
-                height: 25px;
-                margin-left: 5px;
-                background-image: url(../../src/img/nav_xiajiantou.png);
-                background-repeat: no-repeat;
+            font-size: 14px;
+            padding-left: 20px;
+            a{
+                display: inline-block;
+                h3{
+                    margin: 0;
+                    padding-top: 3px;
+                    float: left;
+                }
+                span{
+                    margin-left: 10px;
+                    float: right;
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url(../../src/img/nav_xiajiantou.png);
+                }
             }
-            
-            >.submenu{
-                height: 100px;
-                padding: 0;
-                margin: 0;
+            .submenu{
+                width: 180px;
+                background: #37274B;
                 list-style: none;
-                display: none;
                 position: absolute;
                 z-index: 2;
-                background: #36264a;
-                >li{
-                    padding: 0;
+                margin-top: 40px;
+                display: none;
+                li{
+                    padding: 10px 10px 10px 30px;
+                    &:hover{
+                        background: #009EEC;
+                        cursor: pointer;
+                        padding-left: 40px;
+                        transition: padding-left 0.3s; 
+                      
+                    }&:hover:after{
+                         content: url(../../src/img/nav_li_bg.png);
+                         float: right;
+                    }
                 }
             }
-            &:hover .arrow{
-                background-image:url(../../src/img/nav_xiajiantou_hover.png);
-                background-repeat: no-repeat;
-            }
-            &:hover .submenu{
-                    display: block;   
-                }
         }
     }
+//  .logo{
+//      display: block;
+//      float: left;
+//  }
+//  .menu{
+//      padding: 0;
+//      margin: 0;
+//      list-style: none;
+//      padding:45px 60px;
+//      float: left;
+//      >li{
+//          float: left;
+//          color: #ccbedf;
+//          font-size: 16px;
+//          line-height: 23px;
+//          padding-left: 30px;
+//          position: relative;
+//          .arrow{
+//              float: right;
+//              width: 25px;
+//              height: 25px;
+//              margin-left: 5px;
+//              background-image: url(../../src/img/nav_xiajiantou.png);
+//              background-repeat: no-repeat;
+//          }
+//          
+//          >.submenu{
+//              height: 100px;
+//              padding: 0;
+//              margin: 0;
+//              list-style: none;
+//              display: none;
+//              position: absolute;
+//              z-index: 2;
+//              background: #36264a;
+//              >li{
+//                  padding: 0;
+//              }
+//          }
+//          &:hover .arrow{
+//              background-image:url(../../src/img/nav_xiajiantou_hover.png);
+//              background-repeat: no-repeat;
+//          }
+//          &:hover .submenu{
+//                  display: block;   
+//              }
+//      }
+//  }
 }
