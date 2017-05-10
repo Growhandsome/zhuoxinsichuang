@@ -1,0 +1,76 @@
+.public {
+  width: 1120px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  background-image: url(../../src/img/header_bg.jpg);
+}
+.header .nav img {
+  float: left;
+}
+.header .menu {
+  float: right;
+  color: #fff;
+  list-style: none;
+  padding-top: 50px;
+  position: relative;
+}
+.header .menu .list {
+  height: 70px;
+  float: left;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.header .menu .list a {
+  display: inline-block;
+}
+.header .menu .list a h3 {
+  margin: 0;
+  padding-top: 3px;
+  float: left;
+}
+.header .menu .list a span {
+  margin-left: 10px;
+  float: right;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../src/img/nav_xiajiantou.png);
+}
+.header .menu .list .submenu {
+  width: 180px;
+  background: #37274B;
+  list-style: none;
+  position: absolute;
+  z-index: 2;
+  margin-top: 40px;
+  display: none;
+}
+.header .menu .list .submenu li {
+  padding: 10px 10px 10px 30px;
+}
+.header .menu .list .submenu li:hover {
+  background: #009EEC;
+  cursor: pointer;
+  padding-left: 40px;
+  transition: padding-left 0.3s;
+}
+.header .menu .list .submenu li:hover:after {
+  content: url(../../src/img/nav_li_bg.png);
+  float: right;
+}

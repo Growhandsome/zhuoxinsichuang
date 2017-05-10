@@ -1,0 +1,66 @@
+.public{
+    width:1120px;
+    margin:0 auto;
+}
+.clear{
+    clear: both;
+}
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-image: url(../../src/img/header_bg.jpg);
+    .logo{
+        display: block;
+        float: left;
+    }
+    .menu{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding:45px 60px;
+        float: left;
+        >li{
+            float: left;
+            color: #ccbedf;
+            font-size: 16px;
+            line-height: 23px;
+            padding-left: 30px;
+            position: relative;
+            .arrow{
+                float: right;
+                width: 25px;
+                height: 25px;
+                margin-left: 5px;
+                background-image: url(../../src/img/nav_xiajiantou.png);
+                background-repeat: no-repeat;
+            }
+            
+            >.submenu{
+                height: 100px;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: none;
+                position: absolute;
+                z-index: 2;
+                background: #36264a;
+                >li{
+                    padding: 0;
+                }
+            }
+            &:hover .arrow{
+                background-image:url(../../src/img/nav_xiajiantou_hover.png);
+                background-repeat: no-repeat;
+            }
+            &:hover .submenu{
+                    display: block;   
+                }
+        }
+    }
+}
