@@ -525,6 +525,73 @@ template {
 .banner .banner_btn .dot .right_arrow:hover {
   background-image: url(../../src/img/next_jiantou_hover.png);
 }
+.banner .img_cont {
+  width: 640px;
+  height: 170px;
+  position: absolute;
+  margin: 0 auto;
+  top: 160px;
+  left: 35%;
+  display: none;
+}
+.banner .img_cont .img_1 {
+  width: 640px;
+  height: 65px;
+  position: absolute;
+  left: -640px;
+}
+.banner .img_cont .img_2 {
+  width: 640px;
+  height: 40px;
+  position: absolute;
+  right: -502px;
+  top: 90px;
+}
+.banner .img_cont .img_3 {
+  width: 640px;
+  height: 18px;
+  position: absolute;
+  top: 150px;
+}
+.banner .img_cont2 {
+  width: 430px;
+  height: 400px;
+  position: absolute;
+  left: 20%;
+  top: 70px;
+}
+.banner .img_cont2 .img_c1 {
+  width: 180px;
+  height: 55px;
+  position: absolute;
+  top: 175px;
+}
+.banner .img_cont2 .img_c2 {
+  width: 215px;
+  height: 390px;
+  position: absolute;
+}
+.banner .img_cont2 .img_c3 {
+  width: 66px;
+  height: 20px;
+  position: absolute;
+  top: 80px;
+}
+.banner .img_cont3 {
+  display: none;
+}
+.banner .img_cont3 .img_o1 {
+  width: 550px;
+  height: 80px;
+}
+.banner .img_cont3 .img_o2 {
+  width: 480px;
+  height: 40px;
+}
+.banner .img_cont3 .img_o3 {
+  width: 600px;
+  height: 25px;
+}
 .product {
   width: 100%;
   background: #f1f2f6;

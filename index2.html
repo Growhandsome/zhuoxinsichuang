@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.div{
+				width: 500px;
+				height: 500px;
+				background: red;
+				margin: 0 auto;
+				position: relative;
+			}
+			.button{
+				width: 200px;
+				height: 30px;
+				position: absolute;
+				left:50%;
+				bottom: -30px;
+				margin-left: -100px;
+			}
+			.right{
+				width: 0px;
+				height: 0px;
+				border-bottom: 15px solid white;
+				border-left: 15px solid indianred;
+				border-right: 15px solid white;
+				border-top: 15px solid white;
+				float: right;
+			}
+			.left{
+				width: 0px;
+				height: 0px;
+				border-bottom: 15px solid white;
+				border-left: 15px solid white;
+				border-right: 15px solid indianred;
+				border-top: 15px solid white;
+				float: left;
+			}
+			.animg-left{
+				position: absolute;
+				width: 200px;
+				height: 30px;
+				background: blueviolet;
+				top:50%;
+				left: -200px;
+			}
+			.animg-right{
+				position: absolute;
+				width: 200px;
+				height: 30px;
+				background: black;
+				top:60%;
+				right: -200px;
+				
+			}
+			.animg-left1{
+				position: absolute;
+				width: 200px;
+				height: 30px;
+				background: red;
+				top:50%;
+				left: -200px;
+			}
+			.animg-right1{
+				position: absolute;
+				width: 200px;
+				height: 30px;
+				background: green;
+				top:60%;
+				right: -200px;
+				
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+	</head>
+	<body>
+		<div class="div">
+			<div class="animg">
+				<div class="animg-left"></div>
+				<div class="animg-right"></div>
+			</div>
+			<div class="animg1">
+				<div class="animg-left1"></div>
+				<div class="animg-right1"></div>
+			</div>
+			<div class="button">
+				<div class="right"></div>
+				<div class="left"></div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var img = ['red','yellow','gray','green'];
+			var index=0;
+			yy();
+			$('.left').on('click',function(){
+				index--;
+				if(index<0){
+					index=img.length-1;
+				}
+				yk();
+				kk();
+				kk1();
+				var a=img[index].length;
+				var b=img[0].length;
+				var c=img[1].length;
+				if(a==b){
+					yy();
+				}
+				if(a==c){
+					yy1();
+				}
+			})
+			$('.right').on('click',function(){
+				index++;
+				if(index==4){
+					index=0;
+				}
+				yk();
+				kk();
+				kk1();
+				var a=img[index].length;
+				var b=img[0].length;
+				var c=img[1].length;
+				if(a==b){
+					yy();
+				}
+				if(a==c){
+					yy1();
+				}
+			})
+			function yk(){
+				$('.div').css('background',img[index]);
+			}
+			//变换颜色
+			function yy(){
+				$('.animg-left').show();
+				$('.animg-right').show();
+				$('.animg-left').animate({
+					left:'200px'
+				})
+				$('.animg-right').animate({
+					right:'200px'
+				})
+			}
+			function kk(){
+				$('.animg-left').css({
+					left:'-200px'
+				})
+				$('.animg-right').css({
+					right:'-200px'
+				})
+				$('.animg-left').hide();
+				$('.animg-right').hide();
+			}
+			function yy1(){
+				$('.animg-left1').show();
+				$('.animg-right1').show();
+				$('.animg-left1').animate({
+					left:'200px'
+				})
+				$('.animg-right1').animate({
+					right:'200px'
+				})
+			}
+			function kk1(){
+				$('.animg-left1').css({
+					left:'-200px'
+				})
+				$('.animg-right1').css({
+					right:'-200px'
+				})
+				$('.animg-left1').hide();
+				$('.animg-right1').hide();
+			}
+		</script>
+	</body>
+</html>

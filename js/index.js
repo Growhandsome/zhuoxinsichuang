@@ -39,4 +39,34 @@ $(function(){
 	});
 	
 	
-})
+});
+
+
+$(function(){
+	function imgShow(){
+		$('.banner .img_cont .img_1').show();
+		$('.banner .img_cont .img_2').show();
+		$('.banner .img_cont .img_3').show();
+		$('.banner .img_cont .img_1').animate({
+			left:0
+		});
+		$('.banner .img_cont .img_2').animate({
+			right:0
+		});
+//		$('.banner .img_cont2').hide();
+//		$('.banner .img_cont3').hide();
+	};
+	imgShow();
+//	function img1Show(){
+//		$('.banner .img_cont2 .img_c1').show();
+//		$('.banner .img_cont2 .img_c2').show();
+//		$('.banner .img_cont2 .img_c3').show();
+//		$('.banner .img_cont2 .img_c1').animate({
+//			left:'15%'
+//		});
+//		$('.banner .img_cont2 .img_c2').animate({
+//			right:'60%'
+//		});
+//	};
+//	img1Show();
+});
