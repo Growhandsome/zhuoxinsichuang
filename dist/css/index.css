@@ -554,6 +554,7 @@ template {
   top: 150px;
 }
 .banner .img_cont2 {
+  display: none;
   width: 430px;
   height: 400px;
   position: absolute;
@@ -564,37 +565,58 @@ template {
   width: 180px;
   height: 55px;
   position: absolute;
-  top: 175px;
+  top: 105px;
+  left: -320px;
 }
 .banner .img_cont2 .img_c2 {
   width: 215px;
   height: 390px;
   position: absolute;
+  right: -520px;
 }
 .banner .img_cont2 .img_c3 {
   width: 66px;
   height: 20px;
   position: absolute;
-  top: 80px;
+  top: 120px;
+  left: 210px;
 }
 .banner .img_cont3 {
   display: none;
+  width: 640px;
+  height: 170px;
+  position: absolute;
+  margin: 0 auto;
+  top: 160px;
+  left: 35%;
 }
 .banner .img_cont3 .img_o1 {
   width: 550px;
   height: 80px;
+  position: absolute;
+  left: -640px;
 }
 .banner .img_cont3 .img_o2 {
   width: 480px;
   height: 40px;
+  position: absolute;
+  right: -502px;
+  top: 90px;
 }
 .banner .img_cont3 .img_o3 {
   width: 600px;
   height: 25px;
+  position: absolute;
+  top: 150px;
+}
+.clear {
+  clear: both;
 }
 .product {
+  height: 837px;
   width: 100%;
   background: #f1f2f6;
+  position: relative;
 }
 .product .title {
   text-align: center;
@@ -604,40 +626,138 @@ template {
   margin: 0;
   color: #65527f;
   padding-top: 40px;
+  font-family: 'kaiti';
 }
 .product .title p {
   color: #686377;
 }
-.product .title .product_dot {
-  width: 30px;
-  height: 10px;
-  margin: 0 auto;
+.product .cont_left {
+  position: relative;
+  float: left;
 }
-.product .title .product_dot .product_small-dot {
+.product .cont_left .btn_bar {
+  width: 19px;
+  height: 380px;
+  background: url(../../src/img/chanpin_nowline_bgline.png);
+  background-repeat-x: no-repeat;
+  position: absolute;
+  right: 440px;
+  margin-top: 20px;
+}
+.product .cont_left .btn_bar div {
+  height: 76px;
+}
+.product .cont_left .btn_bar span {
   display: block;
-  margin-left: 2px;
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  background: #7bb1df;
+  width: 11px;
+  height: 11px;
+  background: url(../../src/img/chanpin_nowline_xiaoquan.png);
+}
+.product .cont_left .cont_leftImg {
+  width: 370px;
+  height: 436px;
+  padding: 0 30px;
+}
+.product .cont_left .cont_leftImg img {
+  width: 100%;
+}
+.product .cont_right {
+  width: 560px;
   float: left;
-  cursor: pointer;
+  background: url(../../src/img/pen_line.png);
+  background-position-y: 54px;
+  background-repeat-y: no-repeat;
 }
-.product .title .product_dot .product_small-dot:hover {
-  background: #4a8bc1;
+.product .cont_right h2 {
+  color: #311759;
+  font-size: 30px;
+  padding-top: 10px;
+  margin: 0;
+  padding-bottom: 30px;
 }
-.product .cont_btn {
-  width: 30px;
+.product .pen {
+  display: block;
+  width: 61px;
+  height: 54px;
+  background: url(../../src/img/pen.png);
+  position: absolute;
+  right: 305px;
+}
+.product .summary {
+  padding-top: 20px;
+  width: 610px;
+  height: 100px;
   float: left;
 }
-.product .cont_btn .content_btn {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #e4e7ec;
-  border-radius: 100%;
-  background: #eff2f7;
+.product .summary img {
+  float: left;
+  margin-right: 10px;
+}
+.product .summary .summary_cont {
+  float: left;
+}
+.product .summary .summary_cont h3 {
+  margin: 0;
+  font-family: 'KaiTi_GB2312';
+}
+.product .summary .summary_cont p {
+  margin: 0;
+  font-family: 'KaiTi_GB2312';
+  font-size: 15px;
+  line-height: 24px;
+}
+.product .summary .vision {
+  float: left;
+  margin-top: 100px;
+}
+.product .summary .vision p {
+  margin: 0;
+  font-family: 'KaiTi_GB2312';
+  font-size: 15px;
+  line-height: 24px;
+}
+.product .summary .tip {
   margin-top: 50px;
+  float: right;
 }
-.product .cont_btn .content_btn:hover {
-  background: #376797;
+.product .summary .tip div {
+  display: inline-block;
+}
+.product .summary .tip .left {
+  display: block;
+  float: left;
+  margin: 0;
+}
+.product .summary .tip .right {
+  float: right;
+  margin: 0;
+}
+.product .summary .menubar {
+  width: 610px;
+  height: 29px;
+  background: url(../../src/img/next&prev_line.png);
+  background-repeat-y: no-repeat;
+  background-position-y: 14px;
+  position: absolute;
+  bottom: 330px;
+}
+.product .summary .menubar .menu_left {
+  display: block;
+  float: left;
+  width: 29px;
+  height: 29px;
+  background: url(../../src/img/prev_jiantou.png);
+}
+.product .summary .menubar .menu_left:hover {
+  background: url(../../src/img/prev_jiantou_hover.png);
+}
+.product .summary .menubar .menu_right {
+  display: block;
+  float: right;
+  width: 29px;
+  height: 29px;
+  background: url(../../src/img/next_jiantou.png);
+}
+.product .summary .menubar .menu_right:hover {
+  background: url(../../src/img/next_jiantou_hover.png);
 }

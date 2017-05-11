@@ -61,9 +61,14 @@
 //      }
 //  }
 //}
+.clear{
+    clear: both;
+}
 .product{
+    height: 837px;
     width: 100%;
     background: #f1f2f6;
+    position: relative;
     .title{
         text-align: center;
         padding-top: 50px;
@@ -71,41 +76,139 @@
             margin: 0;
             color: #65527f;
             padding-top: 40px;
+            font-family: 'kaiti';
         }
         p{
             color: #686377;
         }
-        .product_dot{
-            width: 30px;
-            height: 10px;
-            margin: 0 auto;
-            .product_small-dot{
+    }
+    .cont_left{
+        position: relative;
+        float: left;
+        .btn_bar{
+            width: 19px;
+            height: 380px;
+            background: url(../../src/img/chanpin_nowline_bgline.png);
+            background-repeat-x: no-repeat;
+            position: absolute;
+            right: 440px;
+            margin-top: 20px;
+            div{
+                height: 76px;
+            }
+            span{
                 display: block;
-                margin-left:2px;
-                width: 7px;
-                height: 7px;
-                border-radius:100%;
-                background: #7bb1df;
-                float: left;
-                cursor: pointer;
-                &:hover{
-                    background: #4a8bc1;
-                }
+                width: 11px;
+                height: 11px;
+                background: url(../../src/img/chanpin_nowline_xiaoquan.png);
+            }
+        }
+        .cont_leftImg{
+            width: 370px;
+            height: 436px;
+            padding: 0 30px;
+            img{
+                width: 100%;
             }
         }
     }
-    .cont_btn{
-        width: 30px;
+    .cont_right{
+        width: 560px;
         float: left;
-        .content_btn{
-            width: 20px;
-            height: 20px;
-            border: 3px solid #e4e7ec;
-            border-radius: 100%;
-            background: #eff2f7;
-            margin-top:50px; 
-            &:hover{
-                background: #376797;
+        background: url(../../src/img/pen_line.png);
+        background-position-y: 54px;
+        background-repeat-y: no-repeat;
+        h2{
+            color: #311759;
+            font-size: 30px;
+            padding-top: 10px;
+            margin: 0;
+            padding-bottom: 30px;
+        }
+    }
+    .pen{
+        display: block;
+        width: 61px;
+        height: 54px;
+        background: url(../../src/img/pen.png);
+        position: absolute;
+        right: 305px;
+    }
+    .summary{
+        padding-top: 20px;
+        width: 610px;
+        height: 100px;
+        float: left;
+        img{
+            float: left;
+            margin-right: 10px;
+        }
+        .summary_cont{
+            float: left;
+            h3{
+                margin: 0;
+                font-family: 'KaiTi_GB2312';
+            }
+            p{
+                margin: 0;
+                font-family: 'KaiTi_GB2312';
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        .vision{
+            float: left;
+            margin-top: 100px;
+            p{
+                margin: 0;
+                font-family: 'KaiTi_GB2312';
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        .tip{
+            margin-top: 50px;
+            float: right;
+            div{
+                display: inline-block;
+            }
+            .left{
+                display: block;
+                float: left;
+                margin: 0;
+            }
+            .right{
+                float: right;
+                margin: 0;
+            }
+        }
+        .menubar{
+            width: 610px;
+            height: 29px;
+            background: url(../../src/img/next&prev_line.png);
+            background-repeat-y: no-repeat;
+            background-position-y: 14px;
+            position: absolute;
+            bottom: 330px;
+            .menu_left{
+                display: block;
+                float: left;
+                width: 29px;
+                height: 29px;
+                background: url(../../src/img/prev_jiantou.png);
+                &:hover{
+                    background: url(../../src/img/prev_jiantou_hover.png);
+                }
+            }
+            .menu_right{
+                display: block;
+                float: right;
+                width: 29px;
+                height: 29px;
+                background: url(../../src/img/next_jiantou.png);
+                &:hover{
+                    background: url(../../src/img/next_jiantou_hover.png);
+                }
             }
         }
     }
