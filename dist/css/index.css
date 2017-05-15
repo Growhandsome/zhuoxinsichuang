@@ -653,6 +653,12 @@ template {
   height: 11px;
   background: url(../../src/img/chanpin_nowline_xiaoquan.png);
 }
+.product .cont_left .btn_bar span:hover {
+  background: url(../../src/img/chanpin_nowline_xiaoquan.png);
+  background-position-y: 10px;
+  transition: background-position-y 0.3s;
+  cursor: pointer;
+}
 .product .cont_left .cont_leftImg {
   width: 370px;
   height: 436px;
@@ -760,4 +766,114 @@ template {
 }
 .product .summary .menubar .menu_right:hover {
   background: url(../../src/img/next_jiantou_hover.png);
+}
+.brief {
+  width: 100%;
+  height: 923px;
+  background: url(../../src/img/mokuai02_bg.jpg) no-repeat;
+  background-position-x: -185px;
+}
+.brief h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 54px;
+  font-family: 'STKaiti';
+  padding-top: 120px;
+  margin: 0;
+}
+.brief p {
+  text-align: center;
+  color: #fff;
+  font-family: 'Arial, Helvetica, sans-serif';
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.brief .three_spot {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.brief .company_profile {
+  height: 540px;
+}
+.brief .company_profile .left_picture {
+  padding: 0 30px;
+  float: left;
+}
+.brief .company_profile .right_content {
+  position: relative;
+  float: left;
+  width: 615px;
+}
+.brief .company_profile .right_content .title {
+  float: left;
+  background: url(../../src/img/pen_line.png);
+  background-repeat-y: no-repeat;
+  background-position-y: 45px;
+  position: relative;
+}
+.brief .company_profile .right_content .title h1 {
+  font-size: 30px;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-right: 200px;
+}
+.brief .company_profile .right_content .title span {
+  display: inline-block;
+  width: 61px;
+  height: 54px;
+  background: url(../../src/img/pen.png);
+  position: absolute;
+  right: -55px;
+  top: -5px;
+}
+.brief .company_profile .right_content .summ {
+  float: left;
+}
+.brief .company_profile .right_content .summ img {
+  float: left;
+  margin: 30px 15px;
+}
+.brief .company_profile .right_content .summ h5 {
+  float: left;
+  width: 480px;
+  font-size: 24px;
+  color: #bca9d7;
+  margin: 0;
+  padding-top: 30px;
+}
+.brief .company_profile .right_content .summ p {
+  float: left;
+  line-height: 25px;
+  font-size: 15px;
+  width: 480px;
+  color: #bca9d7;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.brief .company_profile .right_content .online {
+  float: left;
+  margin-top: 80px;
+}
+.brief .company_profile .right_content .online p {
+  color: #bca9d7;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+}
+.brief .company_profile .right_content .bg_xiantian {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: url(../../src/img/next&prev_line.png);
+  top: 232px;
+}
+.brief .company_profile .right_content .end {
+  float: right;
+}
+.brief .company_profile .right_content .end p {
+  padding: 0;
+  color: #bca9d7;
+  font-size: 18px;
 }

@@ -101,6 +101,12 @@
                 width: 11px;
                 height: 11px;
                 background: url(../../src/img/chanpin_nowline_xiaoquan.png);
+                &:hover{
+                    background: url(../../src/img/chanpin_nowline_xiaoquan.png); 
+                    background-position-y: 10px; 
+                    transition:background-position-y 0.3s;
+                    cursor: pointer;
+                }
             }
         }
         .cont_leftImg{
@@ -208,6 +214,116 @@
                 background: url(../../src/img/next_jiantou.png);
                 &:hover{
                     background: url(../../src/img/next_jiantou_hover.png);
+                }
+            }
+        }
+    }
+}
+.brief{
+    width: 100%;
+    height: 923px;
+    background: url(../../src/img/mokuai02_bg.jpg) no-repeat;
+    background-position-x: -185px;
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 54px;
+        font-family:'STKaiti';
+        padding-top:120px;
+        margin: 0;
+    }
+    p{
+        text-align: center;
+        color: #fff;
+        font-family: 'Arial, Helvetica, sans-serif';
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    .three_spot{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .company_profile{
+        height: 540px;
+        .left_picture{
+            padding: 0 30px;
+            float: left;
+        }
+        .right_content{
+            position: relative;
+            float: left;
+            width: 615px;
+            .title{
+                float: left;
+                background: url(../../src/img/pen_line.png);
+                background-repeat-y:no-repeat;
+                background-position-y:45px;
+                position: relative;
+                h1{
+                    font-size: 30px;
+                    padding: 0;
+                    padding-bottom: 20px;
+                    padding-right: 200px;
+                }
+                span{
+                    display: inline-block;
+                    width: 61px;
+                    height: 54px;
+                    background: url(../../src/img/pen.png);
+                    position: absolute;
+                    right: -55px;
+                    top: -5px;
+                }
+            }
+            .summ{
+                float: left;
+                img{
+                    float: left;
+                    margin: 30px 15px;
+                }
+                h5{
+                    float: left;
+                    width: 480px;
+                    font-size: 24px;
+                    color:#bca9d7; 
+                    margin: 0;
+                    padding-top: 30px;
+                }
+                p{
+                    float: left;
+                    line-height: 25px;
+                    font-size: 15px;
+                    width: 480px;
+                    color: #bca9d7; 
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+            }
+            .online{
+                float: left;
+                margin-top: 80px;
+                p{
+                    color:#bca9d7;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+            .bg_xiantian{
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                background: url(../../src/img/next&prev_line.png);
+                top:232px;
+            }
+            .end{
+                float: right;
+                p{
+                    padding: 0;
+                    color:#bca9d7;
+                    font-size: 18px;
                 }
             }
         }
