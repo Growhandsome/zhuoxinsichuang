@@ -1,0 +1,113 @@
+@import "header";
+@import "footer";
+@import "normalize";
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+}
+.list_dyna{
+    width: 100%;
+    background: #f1f2f6;
+    h1{
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 54px;
+        color: #311759; 
+    }
+    .english{
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        color: #311759;
+    }
+    .three-dian{
+        text-align: center;
+        margin: 20px 0 40px 0;
+    }
+    .list_title{
+        width: 1100px;
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        background: url(../../src/img/list--zhixian.png)no-repeat;
+        background-position-y: 60px;
+        h3{
+            font-size: 30px;
+            margin: 0;
+            color: #311759;
+            font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+        }
+        span{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 9px;
+            width: 61px;
+            height: 54px;
+            background: url(../../src/img/pen.png)no-repeat;
+        }
+    } 
+    .list_content{
+        width: 1100px;
+        .one_left{
+            margin-top:40px;
+            margin-right: 10px;
+            float: left;
+            height: 240px;
+            background: #ffffff;
+            cursor: pointer;
+            &:active{
+            }
+            .left_img{
+                width: 260px;
+                height: 135px;
+                padding: 38px 0 34px 20px;
+                float: left;
+                overflow: hidden;
+                >img{
+                    width: 100%;
+                }
+            }
+            .left_wenzi{
+                width: 200px;
+                float: left;
+                padding: 50px 20px;
+                line-height: 24px;
+                color: #454548;
+                h3{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .view-more{
+        width: 107px;
+        margin: 50px auto;
+    }
+    .bottom_arrow{
+        width: 58px;
+        height: 58px;
+        background: url(../../src/img/lis_more_btn_bg.png)no-repeat;
+        margin: 30px auto;
+        background-position-y: -58px;
+        cursor:pointer;
+        &:hover{
+            background: url(../../src/img/lis_more_btn_bg.png)no-repeat;
+            background-position-y: 0;
+            transition: background-position-y 0.3s;
+        }
+    }
+}
+.foot_img{
+    width:100%;
+    .foot_one{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        z-index: 999;
+    }
+}

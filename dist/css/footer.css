@@ -1,0 +1,93 @@
+.footer {
+  width: 100%;
+  height: 348px;
+  background: url(../../src/img/yinyue_bg.jpg);
+}
+.footer .music {
+  height: 67px;
+  padding-top: 116px;
+  padding-left: 276px;
+}
+.footer .music span {
+  display: block;
+  width: 57px;
+  float: left;
+  height: 57px;
+  margin: 0 10px;
+}
+.footer .music .duo {
+  background: url(../../src/img/yinyue_duo.png);
+}
+.footer .music .duo:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_duo.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .lai {
+  background: url(../../src/img/yinyue_lai.png);
+}
+.footer .music .lai:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_lai.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .mi {
+  background: url(../../src/img/yinyue_mi.png);
+}
+.footer .music .mi:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_mi.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .fa {
+  background: url(../../src/img/yinyue_fa.png);
+}
+.footer .music .fa:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_fa.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .suo {
+  background: url(../../src/img/yinyue_suo.png);
+}
+.footer .music .suo:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_suo.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .la {
+  background: url(../../src/img/yinyue_la.png);
+}
+.footer .music .la:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_la.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .music .xi {
+  background: url(../../src/img/yinyue_xi.png);
+}
+.footer .music .xi:hover {
+  cursor: pointer;
+  background: url(../../src/img/yinyue_xi.png);
+  background-position-y: 57px;
+  transition: background-position-y 0.3s;
+}
+.footer .footer_bg {
+  margin-top: 80px;
+  border-top: 2px #9890a2 dashed;
+  padding-top: 20px;
+}
+.footer .footer_bg h5 {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.footer .footer_bg h5:hover {
+  color: #168BCB;
+}

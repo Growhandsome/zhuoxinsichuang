@@ -194,4 +194,32 @@ $(function(){
 	
 	
 });
+//点击回顶部
+$(function(){
+	$(document).scroll(function(){
+		if($(this).scrollTop() > 500){
+			$('.floating_sign').fadeIn();
+		}else{
+			$('.floating_sign').fadeOut();
+		};	
+	});
+	$('.floating_sign .top_arrow').click(function(){
+		$(document.body).animate({
+			scrollTop:0
+		})
+	});
+});
 
+//业务范围
+$(function(){
+	$('.business .platform .click_bg').click(function(){
+		$('.business .platform .none .none_one').show();
+		$('.business .platform .none .none_twe').show();
+	});
+	// $('.business .platform .click_bg').click(function(){
+	// 	$('.business .platform .none').css({
+	// 		display:none
+	// 	});
+	// });
+
+});
